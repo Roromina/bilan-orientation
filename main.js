@@ -29,7 +29,7 @@ document.getElementById('bilan-form').addEventListener('submit', function (e) {
     metier: form.metier.value
   };
 
-  const url = "https://script.google.com/macros/s/AKfycbyrQH6xXm4roGU-T32N2oi-2-7WoLkBvV_lQRsr2hD1aL86YOXKvMkJJMrXABgUgzdz/exec";
+  const url = "https://script.google.com/macros/s/AKfycbzUsZZcLTPTid9WvDHF_VAV0jIbnrQUd4iX0IL5u71JFU2Bskd1q2iXk3HxQ7z_uVyk/exec";
   console.log("URL utilisée pour fetch :", url);
 
   fetch(url, {

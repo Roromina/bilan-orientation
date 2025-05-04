@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilan Trimestriel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bilan Trimestriel</h1>
+    <form id="bilan-form">
+      <label for="nom">Ton prénom et nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <div class="question">
+        <p>1. Quand tu dois apprendre une leçon :</p>
+        <label><input type="radio" name="q1" value="a" required> Je lis et je surligne</label><br>
+        <label><input type="radio" name="q1" value="b"> Je récite à voix haute</label><br>
+        <label><input type="radio" name="q1" value="c"> Je la réécris à ma manière</label><br>
+        <label><input type="radio" name="q1" value="d"> Je l’explique à quelqu’un</label>
+      </div>
+
+      <div class="question">
+        <p>2. Ce que tu préfères dans un cours :</p>
+        <label><input type="radio" name="q2" value="a" required> Les images, les schémas</label><br>
+        <label><input type="radio" name="q2" value="b"> Les explications claires</label><br>
+        <label><input type="radio" name="q2" value="c"> Faire des expériences</label><br>
+        <label><input type="radio" name="q2" value="d"> Lire tranquillement à mon rythme</label>
+      </div>
+
+      <div class="question">
+        <p>12. Si tu devais imaginer un métier que tu pourrais aimer plus tard, lequel serait-ce ?</p>
+        <input type="text" name="metier">
+      </div>
+
+      <button type="submit">Envoyer mes réponses</button>
+    </form>
+    <p id="confirmation" style="display:none; color: green;">Merci ! Tes réponses ont bien été envoyées.</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

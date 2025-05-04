@@ -29,7 +29,7 @@ document.getElementById('bilan-form').addEventListener('submit', function (e) {
       };
       
   
-    fetch("https://script.google.com/macros/s/AKfycbzRMAPLuUMlzea9OEMvdYsi2J6Bs9kNB1gHd1VzBV0GdJrEigT71xdPdxELfIpiMCog/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbw79hmXATVh38hOhiQxDRWIbyy6w6kyPsb1zeX9HgEeLf_4zLwVsOZZenMpEIVENS6x/exec", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

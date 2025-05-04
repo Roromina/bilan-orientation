@@ -30,7 +30,7 @@ document.getElementById('bilan-form').addEventListener('submit', function (e) {
   };
 
   const params = new URLSearchParams(data).toString();
-  const url = "https://script.google.com/macros/s/AKfycbzg-6qOoPhttps://script.google.com/macros/s/AKfycbxJQ_EDgxUv4lzWueymLAdydd7ihxCHFtpOhTFWm4ITkzjsGVfSWSFh-odaixfbkt4D/execvQItmy5BHMtsSZiKLL5QAQ26WhvYMq-SI9Uq6cUdKHuIZkrzx4AP9N-EG_/exec?" + params;
+  const url = "https://script.google.com/macros/s/AKfycbxJQ_EDgxUv4lzWueymLAdydd7ihxCHFtpOhTFWm4ITkzjsGVfSWSFh-odaixfbkt4D/exec" + params;
 
   fetch(url)
     .then(response => {

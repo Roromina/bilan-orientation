@@ -29,20 +29,18 @@ document.getElementById('bilan-form').addEventListener('submit', function (e) {
     metier: form.metier.value
   };
 
-  const params = new URLSearchParams(data).toString();
-  const url = "https://script.google.com/macros/s/AKfycbxJQ_EDgxUv4lzWueymLAdydd7ihxCHFtpOhTFWm4ITkzjsGVfSWSFh-odaixfbkt4D/exec" + params;
+  const url = "https://script.google.com/macros/s/AKfycbyrQH6xXm4roGU-T32N2oi-2-7WoLkBvV_lQRsr2hD1aL86YOXKvMkJJMrXABgUgzdz/exec";
+  console.log("URL utilisée pour fetch :", url);
 
-  fetch(url)
-    .then(response => {
-      if (response.ok) {
-        document.getElementById('confirmation').style.display = 'block';
-        form.reset();
-      } else {
-        alert("Une erreur est survenue. Réessaye.");
-      }
-    })
-    .catch(error => {
-      console.error(error);
-      alert("Erreur de connexion.");
-    });
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  document.getElementById('confirmation').style.display = 'block';
+  form.reset();
 });

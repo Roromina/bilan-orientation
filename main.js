@@ -12,7 +12,7 @@ document.getElementById('bilan-form').addEventListener('submit', function (e) {
       metier: form.metier.value
     };
   
-    fetch("https://script.google.com/macros/s/AKfycbxiweWCp9wdfS8qCFLBwao-xjEVIKz2sypgDGDDKk_jTxHjbh8qwb0MEx0v4uyn5Whttps://script.google.com/macros/s/AKfycbxiweWCp9wdfS8qCFLBwao-xjEVIKz2sypgDGDDKk_jTxHjbh8qwb0MEx0v4uyn5WHP/execHP/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzRMAPLuUMlzea9OEMvdYsi2J6Bs9kNB1gHd1VzBV0GdJrEigT71xdPdxELfIpiMCog/exec", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
